@@ -2,6 +2,11 @@
   "name": "@samhwang/ts-starter-template",
   "version": "1.0.0",
   "description": "TypeScript Starter Template",
+  "engines": {
+    "node": "^20.0.0",
+    "pnpm": "^8.0.0"
+  },
+  "packageManager": "^pnpm@8.0.0",
   "scripts": {
     "start": "tsx bin/index.ts",
     "prebuild": "rimraf dist",
