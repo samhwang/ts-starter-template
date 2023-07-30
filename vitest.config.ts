@@ -5,7 +5,7 @@ export default defineConfig({
     globals: true,
     coverage: {
       enabled: true,
-      provider: 'c8',
+      provider: 'v8',
     },
   },
 });
