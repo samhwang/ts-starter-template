@@ -1,8 +1,12 @@
 {
   "compilerOptions": {
     "target": "ESNext",
-    "lib": ["ESNext"],
-    "types": ["vitest"],
+    "lib": [
+      "ESNext"
+    ],
+    "types": [
+      "vitest"
+    ],
     "useDefineForClassFields": true,
     "allowJs": false,
     "skipLibCheck": true,
@@ -11,10 +15,15 @@
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "module": "ESNext",
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": false,
     "noEmit": true
   },
-  "include": ["src", "bin", "tsup.config.ts", "vitest.config.ts"]
+  "include": [
+    "src",
+    "bin",
+    "tsup.config.ts",
+    "vitest.config.ts"
+  ]
 }
