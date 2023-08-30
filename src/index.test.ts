@@ -1,8 +1,8 @@
-import { describe, it, expect, vi } from 'vitest';
+import { describe, expect, it, vi } from 'vitest';
 import { sayHello } from './index';
 
 const consoleSpy = vi.spyOn(console, 'log');
-consoleSpy.mockImplementation(() => { });
+consoleSpy.mockImplementation(() => {});
 
 describe('say hello', () => {
   it('should say hello', () => {
