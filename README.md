@@ -11,7 +11,7 @@ There are 3 ways that you can adopt this template.
 ## Batteries included
 
 - [TypeScript](https://www.typescriptlang.org/) - The core of this template.
-- [Rome](https://https://rome.tools/) for code formatting.
+- [Biome](https://biomejs.dev/) for code formatting.
 - [Vitest](https://vitest.dev/) for running unit tests.
 - [tsup](https://tsup.egoist.dev/) for bundling the project.
 - [tsx](https://github.com/esbuild-kit/tsx) for running the script locally.
