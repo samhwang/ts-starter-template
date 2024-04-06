@@ -16,11 +16,11 @@
     "test": "vitest run",
     "test:watch": "vitest watch",
     "test:CI": "pnpm run test && pnpm run typecheck",
-    "lint": "biome check ./src/**.ts",
-    "lint:fix": "biome check --apply ./src/**.ts",
-    "lint:fix:unsafe": "biome check --apply-unsafe ./src/**.ts",
-    "format": "biome format --write ./src/**.ts",
-    "ci": "biome ci ./src/**.ts"
+    "lint": "biome check ./src/**",
+    "lint:fix": "biome check --apply ./src/**",
+    "lint:fix:unsafe": "biome check --apply-unsafe ./src/**",
+    "format": "biome format --write ./src/**",
+    "ci": "biome ci ./src/**"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.6.4",
