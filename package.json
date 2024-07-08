@@ -6,7 +6,7 @@
     "node": "^20.0.0",
     "pnpm": "^9.0.0"
   },
-  "packageManager": "pnpm@9.1.1",
+  "packageManager": "pnpm@9.5.0",
   "scripts": {
     "prepare": "husky",
     "start": "tsx bin/index.ts",
@@ -18,22 +18,22 @@
     "test:watch": "vitest watch",
     "test:CI": "pnpm run test && pnpm run typecheck",
     "lint": "biome check .",
-    "lint:fix": "biome check --apply .",
-    "lint:fix:unsafe": "biome check --apply-unsafe .",
+    "lint:fix": "biome check --write .",
+    "lint:fix:unsafe": "biome check --write --unsafe .",
     "format": "biome format --write .",
     "ci": "biome ci ."
   },
   "devDependencies": {
-    "@biomejs/biome": "^1.7.3",
-    "@types/node": "^20.12.11",
+    "@biomejs/biome": "^1.8.3",
+    "@types/node": "^20.14.10",
     "@vitest/coverage-v8": "^1.6.0",
-    "esbuild": "^0.21.2",
+    "esbuild": "^0.23.0",
     "husky": "^9.0.11",
-    "lint-staged": "^15.2.2",
-    "rimraf": "^5.0.7",
-    "tsup": "^8.0.2",
-    "tsx": "^4.10.1",
-    "typescript": "^5.4.5",
+    "lint-staged": "^15.2.7",
+    "rimraf": "^5.0.8",
+    "tsup": "^8.1.0",
+    "tsx": "^4.16.2",
+    "typescript": "^5.5.3",
     "vitest": "^1.6.0"
   }
 }
