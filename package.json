@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "TypeScript Starter Template",
   "engines": {
-    "node": "^20.0.0",
+    "node": "^22.0.0",
     "pnpm": "^9.0.0"
   },
   "packageManager": "pnpm@9.12.3",
@@ -23,7 +23,7 @@
   },
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
-    "@types/node": "^20.17.4",
+    "@types/node": "^22.8.5",
     "@vitest/coverage-v8": "^2.1.4",
     "esbuild": "^0.24.0",
     "husky": "^9.1.6",
