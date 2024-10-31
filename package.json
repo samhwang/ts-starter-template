@@ -7,10 +7,23 @@
     "pnpm": "^9.0.0"
   },
   "packageManager": "pnpm@9.12.3",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "files": ["dist"],
   "scripts": {
     "prepare": "husky",
     "start": "vite-node bin/index.ts",
     "build": "tsup",
+    "prepublishOnly": "pnpm run build",
     "typecheck": "tsc",
     "test": "vitest run",
     "test:watch": "vitest watch",
