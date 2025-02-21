@@ -30,7 +30,6 @@
     "test:CI": "pnpm run test && pnpm run typecheck",
     "lint": "biome check .",
     "lint:fix": "biome check --write .",
-    "lint:fix:unsafe": "biome check --write --unsafe .",
     "format": "biome format --write .",
     "ci": "biome ci ."
   },
