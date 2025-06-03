@@ -7,7 +7,7 @@ export default defineConfig({
       enabled: true,
       provider: 'v8',
       clean: true,
-      exclude: [...coverageConfigDefaults.exclude, 'bin'],
+      exclude: [...coverageConfigDefaults.exclude, 'bin', '*.config.*'],
     },
   },
 });

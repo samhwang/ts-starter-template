@@ -22,7 +22,7 @@
   "scripts": {
     "prepare": "husky",
     "start": "vite-node bin/index.ts",
-    "build": "tsup",
+    "build": "tsdown",
     "prepublishOnly": "pnpm run build",
     "typecheck": "tsc",
     "test": "vitest run",
@@ -37,16 +37,15 @@
     "@biomejs/biome": "^1.9.4",
     "@types/node": "^22.15.29",
     "@vitest/coverage-v8": "^3.2.0",
-    "esbuild": "^0.25.5",
     "husky": "^9.1.7",
     "lint-prepush": "^3.0.2",
     "lint-staged": "^16.1.0",
-    "tsup": "^8.5.0",
+    "tsdown": "^0.12.6",
     "typescript": "^5.8.3",
     "vite-node": "^3.2.0",
     "vitest": "^3.2.0"
   },
   "pnpm": {
-    "onlyBuiltDependencies": ["esbuild"]
+    "onlyBuiltDependencies": ["@biomejs/biome", "esbuild"]
   }
 }
