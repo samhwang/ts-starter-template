@@ -1,12 +1,9 @@
 {
   "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
   "files": {
-    "include": ["*.config.*", "src/**", "bin/**", "**/*.json", "**/*.md", "**/*.yaml", "**/*.yml"],
-    "ignore": ["node_modules", "dist", "coverage"]
+    "includes": ["**/*.config.*", "**/src/**", "**/bin/**", "**/*.json", "**/*.md", "**/*.yaml", "**/*.yml", "!**/node_modules", "!**/dist", "!**/coverage"]
   },
-  "organizeImports": {
-    "enabled": true
-  },
+  "assist": { "actions": { "source": { "organizeImports": "on" } } },
   "linter": {
     "enabled": true,
     "rules": {
@@ -19,7 +16,7 @@
     "indentStyle": "space",
     "indentWidth": 2,
     "lineWidth": 160,
-    "ignore": []
+    "includes": ["**"]
   },
   "javascript": {
     "formatter": {
