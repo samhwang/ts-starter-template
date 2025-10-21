@@ -1,5 +1,7 @@
 # TS Starter Template
 
+> WARNING: This repo is now deprecated. Future development of these templates will be in the [starter-kit repo](https://github.com/samhwang/starter-kit)
+
 ## Using this template
 
 There are 3 ways that you can adopt this template.
